@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "signfile",
+  "version": "1.0.0",
+
+  "name": "SignFile",
+  "description": "Build signs from a .json file.",
+  "authors": [
+    "TriLinder"
+  ],
+  "contact": {
+  },
+
+  "license": "",
+  "icon": "assets/signfile/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.example.log"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "minecraft": "~1.18",
+    "java": ">=17"
+  },
+  "suggests": {
+  }
+}
