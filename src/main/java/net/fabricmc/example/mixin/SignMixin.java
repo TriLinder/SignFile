@@ -66,8 +66,8 @@ public class SignMixin {
 			}
 		} catch (FileNotFoundException e) {
 			log.LOGGER.info("Could not load signs.json");
-			text[1] = "Check";
-			text[2] = "console.";
+			text[1] = "Missing";
+			text[2] = "file.";
 		}
 
 		log.LOGGER.info("Finish editing");
