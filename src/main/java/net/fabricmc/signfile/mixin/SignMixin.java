@@ -27,7 +27,11 @@ public class SignMixin {
 	private void init(CallbackInfo info) {
 		log.LOGGER.info("Sign mixin sucess.");
 
-		log.LOGGER.info(String.valueOf(text[0]));
+		log.LOGGER.info("Is player sneaking: " + String.valueOf(log.isPlayerSneaking));
+
+		if (log.isPlayerSneaking) {
+			return;
+		}
 
 		log.LOGGER.info("Setting empty lines.");
 

@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "SignMixin"
+    "SignMixin",
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
