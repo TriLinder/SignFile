@@ -49,13 +49,9 @@ public class SignMixin {
 
 			if (String.valueOf(val) != "null") {
 				String[] lines = val.split("\n");
-				
-				log.LOGGER.info("Line 1: " + lines[0]);
-				log.LOGGER.info("Line 2: " + lines[1]);
-				log.LOGGER.info("Line 3: " + lines[2]);
-				log.LOGGER.info("Line 4:" + lines[3]);
 
-				for(int i = 0; i < 4; i++) {
+				for(int i = 0; i < lines.length; i++) {
+					log.LOGGER.info("Setting line: " + lines[i]);
 					text[i] = lines[i];
 				}
 			}
