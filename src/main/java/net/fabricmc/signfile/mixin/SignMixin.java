@@ -1,6 +1,6 @@
-package net.fabricmc.example.mixin;
+package net.fabricmc.signfile.mixin;
 
-import net.fabricmc.example.log;
+import net.fabricmc.signfile.log;
 import net.minecraft.client.gui.screen.ingame.SignEditScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
