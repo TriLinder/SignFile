@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.Shadow;
 import net.minecraft.block.entity.SignBlockEntity;
 import java.io.FileNotFoundException;
+import com.google.gson.JsonSyntaxException;
 import java.io.FileReader;
 import java.nio.file.Path;
 import java.util.HashMap;
@@ -42,6 +43,15 @@ public class SignMixin {
 
 			log.LOGGER.info("Parsing");
 
+			if (conf == null) {
+				log.LOGGER.warn("Malformed json in signs.json");
+				text[1] = "Malformed";
+				text[2] = "JSON.";
+
+				finishEditing();
+				return;
+			}
+
 			String val = String.valueOf(conf.get(String.valueOf(sign.getPos().getX()) + "," + String.valueOf(sign.getPos().getY()) + "," + String.valueOf(sign.getPos().getZ())));
 			//String val = String.valueOf(conf.get("0,0,0"));
 
@@ -61,9 +71,13 @@ public class SignMixin {
 				text[2] = "coordinates.";
 			}
 		} catch (FileNotFoundException e) {
-			log.LOGGER.info("Could not load signs.json");
+			log.LOGGER.warn("File missing: signs.json");
 			text[1] = "Missing";
 			text[2] = "file.";
+		} catch (JsonSyntaxException e) {
+			log.LOGGER.warn("Malformed json in signs.json");
+			text[1] = "Malformed";
+			text[2] = "JSON.";
 		}
 
 		log.LOGGER.info("Finish editing");
