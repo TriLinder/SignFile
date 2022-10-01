@@ -1,8 +1,4 @@
-
-
-
-
-![icon.png](src/main/resources/assets/signfile/icon.png)
+![icon.png](src/main/resources/assets/signfile/icon_transparent.png)
 
 # SignFile
 
@@ -15,8 +11,6 @@ This is my first shot at Java so expect terrible code.
 Made for the [LiveOverflow SMP](https://www.youtube.com/playlist?list=PLhixgUqwRTjwvBI-hmbZ2rpkAl4lutnJG) server. See the result [here](https://cdn.discordapp.com/attachments/985597892888764466/1021019127499997244/signs.png).
 
 Made primarily for Minecraft version 1.18.2, however [builds](https://github.com/TriLinder/SignFile/releases/latest) for newer version will be included.
-
-
 
 ## Setup
 
@@ -34,7 +28,3 @@ Place `signs.json` into your config folder with the following syntax:
 Then simply place a sign at the correct coordinates in-game.
 
 You can place a sign normally with this mod active by sneaking.
-
-
-
-
