@@ -4,7 +4,7 @@
   "version": "1.0.0",
 
   "name": "SignFile",
-  "description": "Build signs from a .json file.",
+  "description": "Fill out signs from a .json file.",
   "authors": [
     "TriLinder"
   ],
