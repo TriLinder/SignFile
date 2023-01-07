@@ -10,7 +10,9 @@ This is my first shot at Java so expect terrible code.
 
 Made for the [LiveOverflow SMP](https://www.youtube.com/playlist?list=PLhixgUqwRTjwvBI-hmbZ2rpkAl4lutnJG) server. See the result [here](https://cdn.discordapp.com/attachments/985597892888764466/1021019127499997244/signs.png).
 
-Made primarily for Minecraft version 1.18.2, however [builds](https://github.com/TriLinder/SignFile/releases/latest) for newer version will be included.
+Made primarily for Minecraft version 1.18.2, however [builds](https://github.com/TriLinder/SignFile/releases/latest) for 1.18 - 1.19.2 are included.
+
+Note: 1.19.3 and newer will NOT work.
 
 ## Setup
 
